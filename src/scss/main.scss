@@ -1,0 +1,20 @@
+@import './ui.scss';
+@import './reset.scss';
+@import './util.scss';
+@import './header.scss';
+html {
+  &:root {
+    --primary-color: #100c46;
+    --secondary-color: #6257fe;
+    --container-width: 1270px;
+  }
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 1.25rem;
+}
+
+.page {
+  flex: 1 1 auto;
+}

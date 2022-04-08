@@ -1,0 +1,18 @@
+{
+  "name": "deep",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.50.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "vite-plugin-pug": "^0.3.1"
+  }
+}
