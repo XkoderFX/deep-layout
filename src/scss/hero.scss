@@ -1,7 +1,3 @@
-.page {
-  &__section {
-  }
-}
 .main {
   background-color: var(--secondary-color);
 
@@ -14,10 +10,10 @@
   }
 
   &__body {
-    justify-content: center;
-    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 90px 20px 90px 0;
     @media screen and (max-width: 1200px) {
       flex: 0 0 41%;
@@ -29,9 +25,6 @@
   }
 
   &__content {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
     .content-block__label {
       color: #fff;
     }
@@ -53,9 +46,6 @@
         margin-bottom: 30px;
       }
     }
-  }
-
-  &__button {
   }
 
   &__image {

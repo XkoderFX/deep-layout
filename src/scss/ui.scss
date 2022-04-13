@@ -1,6 +1,9 @@
 @use './mixins.scss' as *;
 
 .content-block {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
   &__label {
     font-family: 'Open Sans';
     font-style: normal;

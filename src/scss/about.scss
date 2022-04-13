@@ -14,6 +14,7 @@
   }
 
   &::before {
+    // background on the half of the screen
     content: '';
     position: absolute;
     top: 0;
@@ -35,13 +36,12 @@
     align-self: center;
     flex: 0 0 50%;
     padding: 0 160px 0 0;
+    @media screen and (max-width: 767.98px) {
+      padding: 0;
+    }
   }
 
   &__content {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-
     color: var(--secondary-color);
     .content-block__title {
       color: var(--secondary-color);
@@ -50,9 +50,6 @@
 
   &__text {
     color: white;
-  }
-
-  &__button {
   }
 
   &__image {
@@ -74,15 +71,4 @@
       object-fit: cover;
     }
   }
-}
-.content-block {
-  &__label {
-  }
-
-  &__title {
-  }
-}
-.text {
-}
-.button {
 }
