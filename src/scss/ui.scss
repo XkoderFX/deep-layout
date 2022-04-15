@@ -28,6 +28,7 @@
 }
 .text {
   line-height: 160%;
+  color: var(--primary-color);
   p:not(:last-child) {
     margin-bottom: 30px;
   }
