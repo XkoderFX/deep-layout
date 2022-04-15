@@ -1,0 +1,10 @@
+section.page__section.portfolio
+    .portfolio__container
+        .portfolio__content.content-block.content-block_center
+            .content-block__label Our works
+            h2.content-block__title Portfolio
+        ul.portfolio__items
+            each val in [0,1,2,3]
+                li.portfolio__item
+                    a.portfolio__link(href='#')
+                        img(src=`images/portfolio/${val}.jpg`, alt=`portfolio project #${val+1}`)      
