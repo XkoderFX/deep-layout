@@ -8,8 +8,10 @@
 @import './portfolio.scss';
 @import './team.scss';
 @import './contact.scss';
+@import './footer.scss';
 
 html {
+  scroll-behavior: smooth;
   &:root {
     --primary-color: #100c46;
     --secondary-color: #6257fe;
