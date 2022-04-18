@@ -1,0 +1,166 @@
+@use '/src/scss/mixins.scss' as *;
+.contacts {
+  padding: 150px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1270px) {
+      align-items: stretch;
+      flex-direction: column;
+    }
+  }
+
+  &__body {
+    flex: 0 0 41%;
+    padding: 0 75px 0 0;
+    @media screen and (max-width: 767.98px) {
+      flex: 1 1 auto;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    color: #fff;
+    margin: 0 0 54px 0;
+  }
+
+  &__info {
+    @media screen and (max-width: 767.98px) {
+      flex-direction: column-reverse;
+      align-items: stretch;
+      margin: 40px 0 0 0;
+      padding: 45px 0;
+    }
+
+    padding: 141px 0;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 100vw;
+      left: 252px;
+      height: 100%;
+      top: 0;
+      background-color: var(--secondary-color);
+      @media screen and (max-width: 767.98px) {
+        left: 0;
+        margin-left: -15px;
+      }
+    }
+  }
+
+  &__map {
+    flex: 0 0 74%;
+    height: 617px;
+    position: relative;
+    @media screen and (max-width: 767.98px) {
+      flex: 1 1 auto;
+    }
+    iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__items {
+    display: grid;
+    position: relative;
+    z-index: 5;
+    gap: 85px;
+  }
+}
+.contact {
+  color: #fff;
+  display: grid;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 137%;
+
+  &__title {
+    font-weight: 600;
+    padding: 0 0 0 40px;
+    display: flex;
+    align-items: center;
+    line-height: 25px; // set line height for the background correct displaying
+    &_phone {
+      background: url('/icon/phone.svg') left no-repeat;
+    }
+
+    &_email {
+      background: url('/icon/email.svg') left no-repeat;
+    }
+
+    &_address {
+      background: url('/icon/address.svg') left no-repeat;
+    }
+  }
+
+  &__item {
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+  }
+}
+.form {
+  display: grid;
+  gap: 18px;
+  &__control {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 5px 20px;
+    background-color: #f4f3ff;
+    @include transition();
+    &:focus-within {
+      @include transition();
+      box-shadow: 0px 0px 0px 2px #6257fe;
+      .form__label {
+        @include transition();
+        transform: translateY(0) translateX(-11%) scale(0.8);
+        top: 0;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    color: rgba(16, 12, 70, 0.8);
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    @include transition();
+  }
+
+  &__input:valid + &__label {
+    // if the input is not empty
+    transform: translateY(0) translateX(-11%) scale(0.8);
+    top: 0;
+  }
+
+  &__input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+}
+.button {
+  &_dark {
+    color: #fff;
+    background-color: var(--secondary-color);
+  }
+}

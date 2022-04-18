@@ -1,0 +1,38 @@
+.page__section.contacts
+    .contacts__container
+        .contacts__body
+            .contacts__content.content-block
+                .content-block__label Keep in touch
+                h2.content-block__title Contact us
+            form(action="").contacts__form.form
+                .form__control
+                    input.form__input( id="name" name="name" type="text", required) 
+                    label.form__label(for="name") Name
+                .form__control
+                    input.form__input( id="email" name="email" type="text", required) 
+                    label.form__label(for="email") Email
+                .form__control
+                    input.form__input( id="phone" name="phone" type="tel", required) 
+                    label.form__label(for="phone") Phone
+                .form__control
+                    textarea.form__input( id="message" name="message" type="text", required)
+                    label.form__label(for="message") Message
+                .form__button
+                    button.button.button_dark(type="submit") Submit
+        .contacts__info.contacts
+            .contacts__map
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3377.7382633671673!2d34.80405936669851!3d32.15736120188101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ad0a45a7afcc5da!2zMzLCsDA5JzI2LjUiTiAzNMKwNDgnMjAuMiJF!5e0!3m2!1sen!2sil!4v1650234273920!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            .contacts__items
+                .contacts__item.contact
+                    .contact__title.contact__title_phone Phone
+                    a.contact__item(href="tel:+97242135467") 97242135467
+                    a.contact__item(href="tel:+97242135467") 97242135467
+                .contacts__item.contact
+                    .contact__title.contact__title_email Email
+                    a.contact__item(href="mailto:sales@nextweb.com") sales@deepdash.com
+                .contacts__item.contact
+                    .contact__title.contact__title_address Address
+                    .contact__text 
+                        | Isreal, Herzliya Pituch
+                        | Industrial zone
+                        | Ha Yokra street. 
