@@ -157,6 +157,9 @@
     background: transparent;
     outline: none;
   }
+  textarea {
+    height: 100px;
+  }
 }
 .button {
   &_dark {
